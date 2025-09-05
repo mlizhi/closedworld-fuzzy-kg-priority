@@ -45,5 +45,15 @@ TOPSIS / VIKOR / MULTIMOORA are provided in `notebooks/50_baselines_compare.ipyn
 
 ## 📑 Citing
 If this repository helps your work, please cite:
-Ma, Yufeng, et al. "Multicriteria requirement ranking based on uncertain knowledge representation and reasoning." Advanced Engineering Informatics 59 (2024): 102329.
+```bash
+@article{ma2024multicriteria,
+  title={Multicriteria requirement ranking based on uncertain knowledge representation and reasoning},
+  author={Ma, Yufeng and Dou, Yajie and Xu, Xiangqian and Jiang, Jiang and Yang, Kewei and Tan, Yuejin},
+  journal={Advanced Engineering Informatics},
+  volume={59},
+  pages={102329},
+  year={2024},
+  publisher={Elsevier}
+}
+```
 
