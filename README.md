@@ -20,6 +20,7 @@ cd FRKG-Symbolic-Priority
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/run_ranking.py --demo
+```
 This runs: ontology load → FRKG build → rule expansion → GRA ranking → top-K outputs.
 
 
