@@ -1,4 +1,4 @@
-# FRKG-Symbolic-Priority
+#   Closeworld-Fuzzy-KG-Priority
 
 > **Closed-world fuzzy requirement analysis** using **Symbolic Logic + FRKG** with a **NEV** case study.  
 > Ontology → FRKG → Rule-based expansion → Grey Relational Analysis (GRA) multi-criteria ranking → Baseline comparisons.
@@ -20,3 +20,21 @@ cd FRKG-Symbolic-Priority
 python -m venv .venv && source .venv/bin/activate    # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/run_ranking.py --demo
+This runs: ontology load → FRKG build → rule expansion → GRA ranking → top-K outputs.
+
+
+## 📂 Repo Structure
+- frkg/: core library (rules, closure, distances, GRA, metrics)
+- notebooks/: step-by-step demos
+- neo4j/: Cypher init & queries (optional)
+- data/demo/: minimal runnable demo dataset (anonymized or synthetic)
+- docs/: method overview + figures
+
+## 🧠 Method Overview
+- FRKG definition with μ^α (predicate fuzziness) & μ^β (attribute confidence).
+- Symbolic closure adds implicit edges; we report Novelty, ExtraCoverage, Soundness.
+- Ranking uses GRA with five criteria: business value, user priority, feasibility, dependency, cost.
+
+## 📊 Results (Demo)
+
+
