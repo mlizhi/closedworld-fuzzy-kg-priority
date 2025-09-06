@@ -8,20 +8,21 @@
 [![Python](https://img.shields.io/badge/python-3.10+-blue)](#)
 
 ## ✨ Highlights
-- **Fuzzy Requirement KG (FRKG)**: predicates carry fuzziness μ^α, attributes carry confidence μ^β.
-- **Symbolic rules**: FSEO / FSSO / FSTO / FSIO + FSTO^{siso/simo/miso/mimo} closure (Algorithm 3.1).
+- **Fuzzy Requirement KG (FRKG)**: predicates carry fuzziness $μ^α$, attributes carry confidence $μ^β$.
+- **Symbolic rules**: $FSEO$ / $FSSO$ / $FSTO$ / $FSIO$ + $FSTO^{siso/simo/miso/mimo}$ closure (Algorithm 3.1).
 - **Multi-criteria ranking**: GRA over heterogeneous features (symbolic/real/semantic/interval).
 - **Reproducible NEV case** with data, code, and figures matching the dissertation (Chapter 3).
 
 ## 🚀 Quickstart (5 min)
-> Choose either **A** (quick demo) or **B** (your real data).  
-> If you already use `scripts/run_ranking.py`, keep it; we also provide `scripts/run_quickstart.py`.
+Choose either A (quick demo) or B (your real data).
 
 ```bash
-git clone https://github.com/<yourname>/Closeworld-Fuzzy-KG-Priority.git
-cd Closeworld-Fuzzy-KG-Priority
+git clone https://github.com/mlizhi/closedworld-fuzzy-kg-priority.git
+cd closedworld-fuzzy-kg-priority
 
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
@@ -49,7 +50,7 @@ python scripts/UserStoryExtracted.py
    ```bash
    python scripts/run_quickstart.py --demo
    ```
-   (This script will use your `FRKG_label.csv` if it exists.)
+   (This script will use your `FRKG_label.csv`.)
    >- If you prefer `scripts/run_ranking.py`, keep that entry and mirror the same parameters.
    
 
