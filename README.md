@@ -68,12 +68,12 @@ scripts/
   └─ UserStoryExtracted.py
 neo4j/                 # Cypher init & rule expansion (optional)
 data/
-  ├─ raw/              # 02.用户故事及其类类别278条.xls  (🔶 TODO: place file)
+  ├─ raw/              # 02.用户故事及其类类别278条.xls  
   ├─ processed/        # User_story278.csv, RE_RE.csv, FRKG_label.csv
   └─ README_demo.md
 docs/
   ├─ method_overview.md
-  └─ figures/          # 🔶 TODO: key figures (e.g., heatmaps)
+  └─ figures/          # key figures
 outputs/               # ranking_top10.csv, expansion_stats.json
 ```
 
