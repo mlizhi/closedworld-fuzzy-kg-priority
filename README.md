@@ -79,14 +79,14 @@ outputs/               # ranking_top10.csv, expansion_stats.json
 
 ## 🧠 Method Overview
 **中文（对应博士论文第三章《基于模糊知识图谱逻辑推理的专业领域复杂产品需求排序》）**
-流程：**本体 → BKG → FRKG(μ^α/μ^β) → 符号规则闭包 → 多准则(GRA)排序**。
+流程：**本体 → BKG → FRKG($μ^α$/$μ^β$) → 符号规则闭包 → 多准则(GRA)排序**。
 - **本体**：定义 Classes / ObjectProperties / DataProperties（见论文表3.1/3.2）。
 - **BKG 构建**：从用户故事抽取 User / User_Story / Requirement / Goal 等并建三元组。
-- **FRKG**：给谓词边赋模糊度 μ^α；给属性节点赋置信度 μ^β。
-- **符号规则**：FSEO/FSSO/FSTO/FSIO 与 FSTO^{siso/simo/miso/mimo} 扩展闭包（算法3.1）。
+- **FRKG**：给谓词边赋模糊度 $μ^α$；给属性节点赋置信度 $μ^β$。
+- **符号规则**：$FSEO$/$FSSO$/$FSTO$/$FSIO$ 与 $FSTO^{siso/simo/miso/mimo}$ 扩展闭包（算法3.1）。
 - **排序**：GRA 综合五个准则（商业价值、用户优先级、可行性、依赖性、成本）。
 **English (short)**
-Ontology → BKG → FRKG (μ^α/μ^β) → Symbolic rule closure → GRA over five criteria.
+Ontology → BKG → FRKG ($μ^α$/$μ^β$) → Symbolic rule closure → GRA over five criteria.
 
 ## 🧰 Neo4j (optional)
 - Init & import (see `neo4j/cypher_init.cypher`)
